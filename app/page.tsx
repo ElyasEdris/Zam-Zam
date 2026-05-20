@@ -25,7 +25,7 @@ const page = () => {
 
       <div>
 
-        <section className='flex w-full h-[40vh] bg-cover bg-center' style={{backgroundImage:`url(${background[image].image})`}}>
+        <section className='flex w-full h-[40vh] bg-cover bg-center ' style={{backgroundImage:`url(${background[image].image})`}}>
           
             
               <div  className='flex flex-col justify-center  w-full min-h-[30vh] bg-cover bg-center pl-15'>
@@ -37,11 +37,11 @@ const page = () => {
           
         </section>
         <h1 className='text-blue-700 text-center text-3xl font-bold font-sans'>MRI Department</h1>
-    <section className='flex flex-row justify-center  shadow-gray-800 w-full h-[30vh] px-7.5 py-5 gap-5 '>
+    <section className='flex flex-row justify-center  shadow-gray-800 w-full h-auto px-7.5 py-5 gap-5 '>
       {
         data.map((e, index)=> (
-          <div key={index} className='flex flex-col lg:flex-row bg-gray-200 shadow-[1px_3px_20px_0] rounded-2xl bg-contain bg-no-repeat  bg-left  w-[35%] hover:scale-105 transition-all duration-300'>
-            <div className='relative w-full h-[50%] lg:h-full lg:w-[90%]'>
+          <div key={index} className='flex flex-col w-full lg:flex-row bg-gray-200 shadow-[1px_3px_20px_0] rounded-2xl bg-contain bg-no-repeat  bg-left  lg:w-[35%] hover:scale-105 transition-all duration-300'>
+            <div className='relative w-full h-40 lg:h-full lg:w-[90%]'>
 
             <Image src={e.image} alt={e.name} fill className=' object-cover p-2.5 rounded-3xl' />
             </div>
@@ -59,11 +59,11 @@ const page = () => {
     </section>
     {/* ct sccan section */}
     <h1 className='text-blue-700 text-center text-3xl font-bold font-sans'>CT Scan Department</h1>
-    <section className='flex flex-row justify-center  shadow-gray-800 w-full h-[30vh] px-7.5 py-5 gap-5 '>
+    <section className='flex flex-row justify-center  shadow-gray-800 w-full h-auto px-7.5 py-5 gap-5 '>
       {
         ctsccandata.map((e, index)=> (
           <div key={index} className='flex flex-col lg:flex-row bg-gray-200 shadow-[1px_3px_20px_0] rounded-2xl bg-contain bg-no-repeat  bg-left  w-[35%] hover:scale-105 transition-all duration-300'>
-            <div className='relative w-full h-[50%] lg:h-full lg:w-[90%]'>
+            <div className='relative w-full h-40 lg:h-full lg:w-[90%]'>
 
             <Image src={e.image} alt={e.name} fill className=' object-cover p-2.5 rounded-3xl' />
             </div>
