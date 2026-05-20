@@ -39,13 +39,13 @@ const page = () => {
     <section className='flex flex-row justify-center  shadow-gray-800 w-full h-[30vh] px-7.5 py-5 gap-5 '>
       {
         data.map((e, index)=> (
-          <div key={index} className='flex  bg-gray-200 shadow-[5px_20px_60px_0] rounded-2xl bg-contain bg-no-repeat  bg-left  w-[35%] hover:scale-105 transition-all duration-300'>
-            <div className='relative h-full w-[90%]'>
+          <div key={index} className='flex flex-col lg:flex-row bg-gray-200 shadow-[5px_20px_60px_0] rounded-2xl bg-contain bg-no-repeat  bg-left  w-[35%] hover:scale-105 transition-all duration-300'>
+            <div className='relative w-full h-[50%] lg:h-full lg:w-[90%]'>
 
             <Image src={e.image} alt={e.name} fill className=' object-cover p-2.5 rounded-3xl' />
             </div>
             <div className='flex flex-col items-center w-full text-center '>
-            <h1 className='w-full text-center font-bold font-sans text-blue-700 '>{e.name}</h1>
+            <h1 className='w-full text-center font-bold font-sans text-blue-700 '>{e.name}</h1><br/>
               <p className='font-bold font-sans text-blue-700 '>{e.desc}</p>
             
             </div>
