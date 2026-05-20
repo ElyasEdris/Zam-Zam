@@ -56,7 +56,7 @@ export const ctsccandata = [
     {
     id: 2, 
     name: "Abdomen CT Scan",
-    image: "/mri_machine_1.jpg",
+    image: "/chest_abdomen.jpg",
     desc: "Modern CT scan services with expert radiologists.",
     }, 
 ]

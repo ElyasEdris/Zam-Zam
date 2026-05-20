@@ -37,7 +37,7 @@ const page = () => {
           
         </section>
         <h1 className='text-blue-700 text-center text-3xl font-bold font-sans'>MRI Department</h1>
-    <section className='flex flex-row justify-center  shadow-gray-800 w-full h-auto px-7.5 py-5 gap-5 '>
+    <section className='flex flex-row justify-center  shadow-gray-800 w-full h-auto lg:h-[30vh] px-7.5 py-5 gap-5 '>
       {
         data.map((e, index)=> (
           <div key={index} className='flex flex-col w-full lg:flex-row bg-gray-200 shadow-[1px_3px_20px_0] rounded-2xl bg-contain bg-no-repeat  bg-left  lg:w-[35%] hover:scale-105 transition-all duration-300'>
@@ -46,8 +46,8 @@ const page = () => {
             <Image src={e.image} alt={e.name} fill className=' object-cover p-2.5 rounded-3xl' />
             </div>
             <div className='flex flex-col  w-full  '>
-            <h1 className='w-full  font-bold font-sans text-blue-700 pt-2.5'>{e.name}</h1><br/>
-              <p className='font-bold font-sans text-gray-900 '>{e.desc}</p>
+            <h1 className='w-full  font-bold font-sans text-blue-700 pt-2.5 px-5'>{e.name}</h1><br/>
+              <p className='font-bold font-sans text-gray-900 px-5'>{e.desc}</p>
             
             </div>
           </div>
@@ -59,7 +59,7 @@ const page = () => {
     </section>
     {/* ct sccan section */}
     <h1 className='text-blue-700 text-center text-3xl font-bold font-sans'>CT Scan Department</h1>
-    <section className='flex flex-row justify-center  shadow-gray-800 w-full h-auto px-7.5 py-5 gap-5 '>
+    <section className='flex flex-row justify-center  shadow-gray-800 w-full lg:h-[30vh] h-auto px-7.5 py-5 gap-5 '>
       {
         ctsccandata.map((e, index)=> (
           <div key={index} className='flex flex-col lg:flex-row bg-gray-200 shadow-[1px_3px_20px_0] rounded-2xl bg-contain bg-no-repeat  bg-left  w-[35%] hover:scale-105 transition-all duration-300'>
@@ -68,8 +68,8 @@ const page = () => {
             <Image src={e.image} alt={e.name} fill className=' object-cover p-2.5 rounded-3xl' />
             </div>
             <div className='flex flex-col  w-full  '>
-            <h1 className='w-full  font-bold font-sans text-blue-700 pt-2.5'>{e.name}</h1><br/>
-              <p className='font-bold font-sans text-gray-900 '>{e.desc}</p>
+            <h1 className='w-full  font-bold font-sans text-blue-700 pt-2.5 px-5 lg:pl-0'>{e.name}</h1><br/>
+              <p className='font-bold font-sans text-gray-900 px-5'>{e.desc}</p>
             
             </div>
           </div>
