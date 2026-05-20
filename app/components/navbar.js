@@ -2,13 +2,13 @@
 import React from 'react'
 import { useState } from 'react';
 
-const navbar = () => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
     <div>
 
-    <header className="bg-blue-800 text-gray-200 body-font sticky top-0 ">
-  <div className=" flex  p-5 justify-between md:flex-row items-center">
+    <header className="bg-blue-800 text-gray-200 body-font sticky top-0 z-50">
+  <div className=" flex  p-5 justify-between md:flex-row items-center ">
     <div className="flex  title-font font-medium  text-gray-900  md:mb-0">
       <h1>logo</h1>
       <div className="flex flex-col title-font font-medium  text-gray-200  md:mb-0">
@@ -17,7 +17,7 @@ const navbar = () => {
       </div>
       
     </div>
-    <nav className="hidden md:ml-auto flex flex-wrap items-center text-base justify-center  lg:block md:block">
+    <nav className="hidden md:ml-auto flex  flex-wrap items-center text-base justify-center  lg:block md:block">
       <a className="mr-5 cursor-pointer hover:border-2  py-2.5 px-2.5 hover:bg-gray-200 rounded-e-2xl hover:text-gray-900 ">First Link</a>
       <a className="mr-5 cursor-pointer hover:border-2  py-2.5 px-2.5 hover:bg-gray-200 rounded-e-2xl hover:text-gray-900">Second Link</a>
       <a className="mr-5 cursor-pointer hover:border-2  py-2.5 px-2.5 hover:bg-gray-200 rounded-e-2xl hover:text-gray-900">Third Link</a>
@@ -46,4 +46,4 @@ const navbar = () => {
   )
 }
 
-export default navbar
+export default Navbar
