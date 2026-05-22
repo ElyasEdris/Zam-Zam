@@ -28,7 +28,7 @@ const page = () => {
 
       <div>
 
-        <section className='flex w-full h-[40vh] bg-cover bg-center ' style={{backgroundImage:`url(${background[image].image})`}}>
+        <section className='flex w-full h-[40vh] bg-cover bg-center transition-all duration-1000 ease-in-out hover:scale-105' style={{backgroundImage:`url(${background[image].image})`}}>
           
             
               <div  className='flex flex-col justify-center  w-full min-h-[30vh] bg-cover bg-center pl-15'>
